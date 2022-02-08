@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "377a8dc1-3bed-4993-a70d-d0053d0db0ee": {
+      "ProjectGuid": "377a8dc1-3bed-4993-a70d-d0053d0db0ee",
+      "DisplayName": "Skinet.Core",
+      "ColorIndex": 0
+    },
+    "d54a8098-3203-4d1a-914f-fd753e8bf160": {
+      "ProjectGuid": "d54a8098-3203-4d1a-914f-fd753e8bf160",
+      "DisplayName": "Skinet.Infrastracture",
+      "ColorIndex": 1
+    },
+    "e3161996-36a8-4050-aa88-5b619c22724d": {
+      "ProjectGuid": "e3161996-36a8-4050-aa88-5b619c22724d",
+      "DisplayName": "Skinet.Application",
+      "ColorIndex": 2
+    },
+    "bc64a6e1-d6db-4f78-957a-b0df7dd05f31": {
+      "ProjectGuid": "bc64a6e1-d6db-4f78-957a-b0df7dd05f31",
+      "DisplayName": "Skinet",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
