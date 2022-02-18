@@ -1,46 +1,67 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Skinet.Core.Entities;
 using Skinet.Core.Interfaces;
+using Skinet.Core.Specifications;
+using Skinet.Dtos;
+using Skinet.Errors;
+using Skinet.Helpers;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Skinet.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
+  
+    public class ProductsController : BaseApiController
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IGenericRepository<Products> _productRepository;
+        private readonly IGenericRepository<ProductBrand> _brandRepository;
+        private readonly IGenericRepository<ProductType> _productType;
+        public IMapper _Mapper;
 
-        public ProductsController(IProductRepository productRepository)
+        public ProductsController(IGenericRepository<Products> productRepository,
+            IGenericRepository<ProductBrand> BrandRepository, 
+            IGenericRepository<ProductType> productType, IMapper mapper)
         {
             _productRepository = productRepository;
+            _brandRepository = BrandRepository;
+            _productType = productType;
+            _Mapper = mapper;
         }
         [HttpGet(nameof(GetProducts))]
-        public ActionResult<List<Products>> GetProducts()
+        public async Task<ActionResult<Pagination<ProductDto>>> GetProducts(
+            [FromQuery]ProductSpecPrams productSpecPrams)
         {
-            var obj = _productRepository.GetListOfproduct();
-            return Ok(obj);
+            var spec = new ProductWithSpecificationTypesAndBrand(productSpecPrams);
+            var speccount = new ProductWithFilterCountSpecification(productSpecPrams);
+            var total = await _productRepository.CountAsync(spec);
+            var products = await _productRepository.ListAsync(spec);
+            var data = _Mapper.Map<IReadOnlyList<Products>, IReadOnlyList<ProductDto>>(products);
+            return Ok(new Pagination<ProductDto>(productSpecPrams.pageIndex, productSpecPrams.pageSize, total, data));
         }
 
         [HttpGet(nameof(GetProductById))]
-        public async Task<Products> GetProductById(int Id)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(APIResponce),StatusCodes.Status404NotFound)]
+        public async Task<ProductDto> GetProductById(int Id)
         {
-            return await _productRepository.GetProductByIdAsync(Id);
+            var spec = new ProductWithSpecificationTypesAndBrand(Id);
+            var products = await _productRepository.GetEntityWithSpec(spec);
+            return _Mapper.Map<Products,ProductDto>(products);
         }
 
         [HttpGet(nameof(GetProductBrand))]
         public ActionResult<List<ProductBrand>> GetProductBrand()
         {
-            var obj = _productRepository.GetProductBrandAsync();
+            var obj = _brandRepository.GetAllAsync();
             return Ok(obj);
         }
 
-        [HttpGet(nameof(GetProductType))]
-        public ActionResult<List<ProductType>> GetProductType()
+        [HttpGet(nameof(GetProductTypes))]
+        public ActionResult<List<ProductType>> GetProductTypes()
         {
-            var obj = _productRepository.GetProductsTypeAsync();
+            var obj = _productRepository.GetAllAsync();
             return Ok(obj);
         }
     }

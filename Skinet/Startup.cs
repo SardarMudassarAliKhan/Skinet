@@ -9,6 +9,13 @@ using Skinet.Infrastracture.Data;
 using Skinet.Infrastracture.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Skinet.Infrastracture.SeedData;
+using Skinet.Helpers;
+using Skinet.ExceptionMiddleWare;
+using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using Skinet.Errors;
+using Microsoft.OpenApi.Models;
+using Skinet.Controllers.Extensions;
 
 namespace Skinet
 {
@@ -24,25 +31,29 @@ namespace Skinet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<StoreContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
-            //Services Injected
-            services.AddScoped<StoreContext, StoreContext>();
-            services.AddScoped<StoreContextSeed, StoreContextSeed>();
-            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddApplicationServices();
+            services.AddSwaggerDocumentation();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", policy =>
+                 {
+                     policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:44331/");
+                 });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
+            app.UseMiddleware<ExceptionMiddle>();
+            app.UseStatusCodePagesWithReExecute("/error/{0}");
             app.UseHttpsRedirection();
-
+            app.UseSwaggerGen();
             app.UseRouting();
-
+            app.UseStaticFiles();
+            app.UseCors("CorsPolicy");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {}
+    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {}
   },
   "projects": {
-    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj": {
+    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj",
+        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj",
         "projectName": "Skinet.Core",
-        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj",
+        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj",
         "packagesPath": "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\",
-        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Core\\obj\\",
+        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MudassirAliKhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.22, )"
@@ -76,14 +80,14 @@
         }
       }
     },
-    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {
+    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
+        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
         "projectName": "Skinet.Infrastracture",
-        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
+        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
         "packagesPath": "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\",
-        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\obj\\",
+        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MudassirAliKhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,8 +104,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj": {
-                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj"
+              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj": {
+                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj"
               }
             }
           }
