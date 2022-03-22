@@ -6,10 +6,11 @@ namespace Skinet.Errors
 {
     public class APIValidationErrorResponce : APIResponce
     {
-        public IEnumerable<string> Errors { get; set; }
         public APIValidationErrorResponce() : base(400)
         {
 
         }
+        public IEnumerable<string> Errors { get; set; }
+
     }
 }

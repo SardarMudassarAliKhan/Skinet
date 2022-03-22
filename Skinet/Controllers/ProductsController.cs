@@ -44,24 +44,24 @@ namespace Skinet.Controllers
         [HttpGet(nameof(GetProductById))]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(APIResponce),StatusCodes.Status404NotFound)]
-        public async Task<ProductDto> GetProductById(int Id)
+        public async Task<ProductDto> GetProductById([FromQuery] int Id)
         {
             var spec = new ProductWithSpecificationTypesAndBrand(Id);
-            var products = await _productRepository.GetEntityWithSpec(spec);
-            return _Mapper.Map<Products,ProductDto>(products);
+            var products = await _productRepository.GetByIdAsync(Id);
+            return _Mapper.Map<ProductDto>(products);
         }
 
         [HttpGet(nameof(GetProductBrand))]
-        public ActionResult<List<ProductBrand>> GetProductBrand()
+        public async Task<ActionResult<List<ProductBrand>>> GetProductBrand()
         {
-            var obj = _brandRepository.GetAllAsync();
+            var obj = await _brandRepository.GetAllAsync();
             return Ok(obj);
         }
 
         [HttpGet(nameof(GetProductTypes))]
-        public ActionResult<List<ProductType>> GetProductTypes()
+        public async Task<ActionResult<List<ProductType>>> GetProductTypes()
         {
-            var obj = _productRepository.GetAllAsync();
+            var obj = await _productRepository.GetAllAsync();
             return Ok(obj);
         }
     }

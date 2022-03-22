@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Skinet.Errors;
 using Skinet.Infrastracture.Data;
@@ -41,5 +42,14 @@ namespace Skinet.Controllers
         {
             return Ok();
         }
+        [HttpGet(nameof(testauth))]
+        [Authorize]
+        public ActionResult<string> testauth()
+        {
+            return "Test Auth";
+        }
+
+
+
     }
 }

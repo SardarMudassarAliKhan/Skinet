@@ -27,13 +27,13 @@ namespace Skinet.Core.Specifications
                 switch(productSpecPrams.sort)
                 {
                     case "priceAsc":
-                        AddOrderBy(x => x.Price);
+                        AddOrderBy(p => p.Price);
                         break;
                     case "priceDesc":
-                        AddOrderByDecending(x=> x.Price);
+                        AddOrderByDecending(p=> p.Price);
                         break;
                     default:
-                        AddOrderBy(x => x.Name);
+                        AddOrderBy(n => n.Name);
                         break;
                 }
             }
@@ -42,8 +42,8 @@ namespace Skinet.Core.Specifications
         public ProductWithSpecificationTypesAndBrand(int Id) 
             : base(x=>x.Id==Id)
         {
-            AddInclude(P => P.ProductType);
-            AddInclude(T => T.ProductBrand);
+            AddInclude(x => x.ProductType);
+            AddInclude(x => x.ProductBrand);
         }
     }
 }

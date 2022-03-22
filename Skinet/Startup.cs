@@ -16,6 +16,9 @@ using System.Linq;
 using Skinet.Errors;
 using Microsoft.OpenApi.Models;
 using Skinet.Controllers.Extensions;
+using StackExchange.Redis;
+using Skinet.Infrastracture.identity;
+using Skinet.Extensions;
 
 namespace Skinet
 {
@@ -30,16 +33,27 @@ namespace Skinet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<StoreContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<StoreContext>(options => 
+            options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<IdentityContext>(options =>
+            options.UseSqlite(Configuration.GetConnectionString("DefaultIdentityConnection")));
+            services.AddSingleton<IConnectionMultiplexer>(c =>
+            {
+                var configuration = ConfigurationOptions.
+                Parse(Configuration.GetConnectionString("Radis"), true);
+                return ConnectionMultiplexer.Connect(configuration);
+            });
+           
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
             services.AddApplicationServices();
             services.AddSwaggerDocumentation();
+            services.AddIdentityService(Configuration);
             services.AddCors(options =>
             {
-                options.AddPolicy("CorsPolicy", policy =>
+                 options.AddPolicy("CorsPolicy", policy =>
                  {
-                     policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:44331/");
+                     policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("*");
                  });
             });
         }
@@ -49,11 +63,12 @@ namespace Skinet
         {
             app.UseMiddleware<ExceptionMiddle>();
             app.UseStatusCodePagesWithReExecute("/error/{0}");
+            app.UseCors("CorsPolicy");
             app.UseHttpsRedirection();
             app.UseSwaggerGen();
             app.UseRouting();
             app.UseStaticFiles();
-            app.UseCors("CorsPolicy");
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
