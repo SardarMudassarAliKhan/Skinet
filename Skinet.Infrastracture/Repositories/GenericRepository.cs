@@ -72,6 +72,20 @@ namespace Skinet.Infrastracture.Repositories
             return SpecificationEvaluatOr<T>.GetQuery(_storeContext.Set<T>().AsQueryable(), specifications);
         }
 
-        
+        public void Add(T entity)
+        {
+            _storeContext.Add<T>(entity);
+        }
+
+        public void Update(T entity)
+        {
+            _storeContext.Attach<T>(entity);
+            _storeContext.Entry(entity).State = EntityState.Modified;
+        }
+
+        public void Delete(T entity)
+        {
+            _storeContext.Set<T>().Remove(entity);
+        }
     }
 }

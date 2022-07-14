@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet\\Skinet.csproj": {}
+    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet\\Skinet.csproj": {}
   },
   "projects": {
-    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj": {
+    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj",
+        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj",
         "projectName": "Skinet.Core",
-        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj",
+        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj",
         "packagesPath": "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\",
-        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\obj\\",
+        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MudassirAliKhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -84,18 +84,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Application\\Skinet.Application.csproj": {
+    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Application\\Skinet.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Application\\Skinet.Application.csproj",
+        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Application\\Skinet.Application.csproj",
         "projectName": "Skinet.Application",
-        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Application\\Skinet.Application.csproj",
+        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Application\\Skinet.Application.csproj",
         "packagesPath": "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\",
-        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Application\\obj\\",
+        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MudassirAliKhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,11 +112,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj": {
-                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj"
+              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj": {
+                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj"
               },
-              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {
-                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj"
+              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {
+                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj"
               }
             }
           }
@@ -163,18 +163,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {
+    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
+        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
         "projectName": "Skinet.Infrastracture",
-        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
+        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
         "packagesPath": "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\",
-        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\obj\\",
+        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MudassirAliKhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -191,8 +191,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj": {
-                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj"
+              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj": {
+                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj"
               }
             }
           }
@@ -259,18 +259,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet\\Skinet.csproj": {
+    "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet\\Skinet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet\\Skinet.csproj",
+        "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet\\Skinet.csproj",
         "projectName": "Skinet",
-        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet\\Skinet.csproj",
+        "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet\\Skinet.csproj",
         "packagesPath": "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\",
-        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet\\obj\\",
+        "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MudassirAliKhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -287,14 +287,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj": {
-                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj"
+              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj": {
+                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj"
               },
-              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Application\\Skinet.Application.csproj": {
-                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Application\\Skinet.Application.csproj"
+              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Application\\Skinet.Application.csproj": {
+                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Application\\Skinet.Application.csproj"
               },
-              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {
-                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj"
+              "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj": {
+                "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj"
               }
             }
           }
@@ -364,12 +364,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.21, 3.1.21]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -378,7 +372,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     }

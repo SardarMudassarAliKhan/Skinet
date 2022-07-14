@@ -4945,11 +4945,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj",
+      "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj",
       "projectName": "Skinet.Core",
-      "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj",
+      "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj",
       "packagesPath": "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\",
-      "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\obj\\",
+      "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MudassirAliKhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5022,7 +5022,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
       }
     }
   }

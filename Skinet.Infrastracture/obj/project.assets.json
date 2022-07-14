@@ -5531,11 +5531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
+      "projectUniqueName": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
       "projectName": "Skinet.Infrastracture",
-      "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
+      "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\Skinet.Infrastracture.csproj",
       "packagesPath": "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\",
-      "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Infrastracture\\obj\\",
+      "outputPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Infrastracture\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MudassirAliKhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5552,8 +5552,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj": {
-              "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Core\\Skinet.Core.csproj"
+            "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj": {
+              "projectPath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Core\\Skinet.Core.csproj"
             }
           }
         }
@@ -5620,7 +5620,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
       }
     }
   }

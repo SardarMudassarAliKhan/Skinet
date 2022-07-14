@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZiNFGrHiZvjGSul/yfVR6sMPEfvU7iM1NcE7UJkTCXWQiK0QO4Xh2y6xId/Ja45BBZMuqRGvPYgUQpx3UKOwXg==",
+  "dgSpecHash": "iZ8Xu1PlUyDH7BK0crrGFzDlDlagWVVbij8O98exQmlv8M4Fbpuka3oEtkWqsZbQrSUMIHRujnkRjqNF0RGAtA==",
   "success": true,
-  "projectFilePath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet.Application\\Skinet.Application.csproj",
+  "projectFilePath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet.Application\\Skinet.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

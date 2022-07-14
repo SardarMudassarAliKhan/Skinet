@@ -19,6 +19,8 @@ namespace Skinet.Controllers.Extensions
             services.AddScoped<StoreContextSeed, StoreContextSeed>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICustomerBasket, BasketRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IOrderService, OrderService>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.Configure<ApiBehaviorOptions>(options =>
               options.InvalidModelStateResponseFactory = ActionContext =>

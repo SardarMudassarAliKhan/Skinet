@@ -18,5 +18,9 @@ namespace Skinet.Core.Interfaces
         void DeleteAsync(T entity);
         void UpdateAsync(T entity);
 
+        void Add(T entity);
+        void Update(T entity);
+        void Delete(T entity);
+
     }
 }

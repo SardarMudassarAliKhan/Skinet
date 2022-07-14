@@ -29,10 +29,10 @@ namespace Skinet.Controllers
         }
 
         [HttpPost(nameof(UpdateProduct))]
-        public async Task<ActionResult<CustomerBasket>> UpdateProduct(CustomerbasketDto product)
+        public async Task<ActionResult<CustomerBasket>> UpdateProduct(CustomerBasket product)
         {
-            var customerbasket = _mapper.Map<CustomerbasketDto, CustomerBasket>(product);
-            var data =  await _customerBasket.UpdateBasketAsync(customerbasket);
+            //var customerbasket = _mapper.Map<CustomerbasketDto, CustomerBasket>(product);
+            var data =  await _customerBasket.UpdateBasketAsync(product);
             return Ok(data);
         }
         [HttpDelete(nameof(DeleteProduct))]

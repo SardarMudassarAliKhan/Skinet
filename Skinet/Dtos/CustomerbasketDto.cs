@@ -5,8 +5,15 @@ namespace Skinet.Dtos
 {
     public class CustomerbasketDto
     {
-        [Required]
+        public CustomerbasketDto()
+        {
+                
+        }
+        public CustomerbasketDto(string id)
+        {
+            Id = id;
+        }
         public string Id { get; set; }
-        public List<BasketItemDto> Items { get; set; }
+        public List<BasketItemDto> Items { get; set; } 
     }
 }

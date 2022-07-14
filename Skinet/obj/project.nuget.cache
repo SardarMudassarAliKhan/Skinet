@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bj17zVvtMqLouQkhyWWGjaNGVi1q/wHyT+DARuAbUvdJFfQwsSaQeaU56T/pnlLRUIj+utJE92MhrkMKCL1CWA==",
+  "dgSpecHash": "FWDlWqBwZkWvyTcTicza5R6InEE+N6hGTamGXXq4zEAKtrr87P+SwhrprJWdEZklQehYCpgZnVL52P/KVOkMCA==",
   "success": true,
-  "projectFilePath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\Skinet\\Skinet\\Skinet.csproj",
+  "projectFilePath": "F:\\Software Programming Practice\\ASP.NET FRAMEWORK SPECIAL\\2022-POC-PROJECT\\Asp.NET_Architecture\\CleanArchiInAspNetCore6WebAPI\\Skinet\\Skinet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -147,8 +147,7 @@
     "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+    "C:\\Users\\MudassirAliKhan\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
